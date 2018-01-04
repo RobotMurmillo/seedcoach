@@ -3,8 +3,20 @@
     padding: 0; 
 }
 
-.headerphoto {
-    width: 90%;
+nav {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.header {
+    text-align: center;
+}
+
+.header img {
+    width: 95%;
     text-align: center;
     margin: auto;
 }
