@@ -1,2 +1,2 @@
 # seedcoach
-seedcoachwebsite
+initial website design for seed coach
