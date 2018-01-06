@@ -5,10 +5,15 @@
 
 nav {
     float: right;
+    width: 50%;
+    text-align: right;
+    padding: 10px;
 }
 
 nav ul li {
     display: inline-block;
+    text-decoration: none;
+    padding: 0 4%;
 }
 
 .header {
