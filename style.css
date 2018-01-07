@@ -35,6 +35,7 @@ nav {
     font-family: 'Amatic SC', cursive;
 }
 @media screen and (max-width:550px) {
+    /* Mobile Version */
     .title {
         background-color: white;
         width: 100%;
@@ -53,25 +54,23 @@ nav {
         padding: 0;
         text-align: center;
         }
-
-    nav {
-        position: fixed; 
-        bottom: 0; 
-        width: 100%;
-        background-color: white;
+    .header {
         text-align: center;
-
+        margin: 50px 5% 200px 5%;
+        width: 90%;
+        background-image: url(images/headerphoto_mob.png);
+        background-position: center;
+        background-size: cover;
+        height: 550px;
+        }
+    nav {
+        display: none;
     }
 
-    nav ul {
-        background-color: blue;
-    }
-    nav ul li{
-        padding: 0 4%;
-        background-color: pink;
-    }
+
 }
 @media screen and (min-width:550px) {
+    /* Desktop Version */
     nav {
         float: right;
         width: 100%;
@@ -86,14 +85,13 @@ nav {
 
     .header {
         text-align: center;
-        margin-bottom: 200px;
+        margin: 100px 2.5% 200px 2.5%;
+        width: 95%;
+        background-image: url(images/headerphoto.jpg);
+        background-size: cover;
+        height: 700px;
     }
 
-    .header img {
-        width: 95%;
-        text-align: center;
-        margin: auto;
-    }
 
     .title h1 {
         font-size: 160px;
@@ -103,6 +101,33 @@ nav {
     .title h3 {
         margin: 0;
         padding-left: 450px;
+    }
+
+    .video_header h1 {
+        color: greenyellow;
+        font-size: 170px;
+        font-family: 'Meadowbrook';
+        font-weight: lighter;
+        padding: 0;
+        margin: 0;
+    }
+    .video_header h1, h2 {
+        padding: 0; 
+        margin: 0;
+    }
+    
+    .video_header h2 {
+        font-size: 40px;
+        margin-bottom: -80px;
+        margin-left: -10px;
+    }
+    
+    
+    .video_header h3 {
+        padding: 0;
+        margin: -30px 0 0 0;
+        text-align: right;
+        font-size:  28px;
     }
 }
 
@@ -114,32 +139,6 @@ nav ul li {
 .video_header {
     margin: 5% 2.5% 5% 35%;
     width: 700px;
-}
-
-.video_header h1, h2 {
-    padding: 0; 
-    margin: 0;
-}
-
-.video_header h2 {
-    font-size: 40px;
-    margin-bottom: -80px;
-    margin-left: -10px;
-}
-
-.video_header h1 {
-    font-size: 170px;
-    font-family: 'Meadowbrook';
-    font-weight: lighter;
-    padding: 0;
-    margin: 0;
-}
-
-.video_header h3 {
-    padding: 0;
-    margin: -30px 0 0 0;
-    text-align: right;
-    font-size:  28px;
 }
 
 .youtube_video iframe {
@@ -158,13 +157,9 @@ nav ul li {
         text-align: center;
         width: 100%;
     }
-
-    .youtube_video iframe {
-       
-    }
 }
 
-@media screen and (max-width: 800px)  and (min-width:550px){
+@media screen and (max-width: 900px)  and (min-width:550px){
     .title {
         background-color: white;
         width: 100%;
@@ -175,6 +170,7 @@ nav ul li {
         font-size: 100px;
         margin: 0;
         padding: 0;
+        display: block;
     }
 
     .title h3 {
@@ -186,21 +182,51 @@ nav ul li {
     }
 
     .video_header {
-        margin: 5%;
+        margin: 5% 70px;
+        width: 550px;
     }
 
     .video_header h1 {
-        font-size: 150px;
+        color: greenyellow;
+        font-size: 130px;
+        font-family: 'Meadowbrook';
+        font-weight: lighter;
+        padding: 0;
+        margin: 0;
     }
 
-    .video_header h3 {
-        margin: -30px 0 0 0;
-        padding-right: 80px;
+    .video_header h2 {
+        font-size: 35px;
+        display: block;
+        margin: 10px 0 -60px 0;
+
     }
+    
+    .video_header h3 {
+        padding: 5px 10px;
+        margin: -10 px 20px 0 0;
+        text-align: right;
+        font-size:  28px;
+    }
+
+    .header {
+        text-align: center;
+        margin: 100px 2.5%;
+        width: 95%;
+        background-image: url(images/headerphoto_mob.png);
+        background-size: cover;
+        height: 700px;
+    }
+
+
 
     .youtube_video iframe {
         width: 700px;
         height: 350px;
         margin: 0;
+    }
+
+    nav {
+        display: none;
     }
 }
