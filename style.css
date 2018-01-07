@@ -1,8 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+@font-face {
+    font-family: 'Meadowbrook';
+      src:  url('Meadowbrook.ttf.woff') format('woff'),
+      url('Meadowbrook.ttf.svg#Meadowbrook') format('svg'),
+      url('Meadowbrook.ttf.eot'),
+      url('Meadowbrook.eot?#iefix') format('embedded-opentype'); 
+}
+
 :root {
     margin: 0;
     padding: 0; 
 }
-@media screen and (max-width:600px) {
+
+.title h1 {
+    font-family: 'Meadowbrook';
+}
+@media screen and (max-width:480px) {
+    body {
+        max-width: 480px;
+        
+    }
     .title {
         position: fixed;
         top: 0; 
@@ -12,29 +30,88 @@
     }
 
     nav {
-        display: none;
+        position: fixed; 
+        bottom: 0; 
+        width: 100%;
+        background-color: white;
+        text-align: center;
+
+    }
+
+    nav ul {
+        background-color: blue;
+    }
+    nav ul li{
+        padding: 0 4%;
+        background-color: pink;
     }
 }
+@media screen and (min-width:480px) {
+    nav {
+        float: right;
+        width: 100%;
+        text-align: right;
+        padding: 10px;
+    }
 
-nav {
-    float: right;
-    width: 50%;
-    text-align: right;
-    padding: 10px;
+    nav ul li {
+        padding: 0 2%;
+        text-align: center;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .header img {
+        width: 95%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .title h1 {
+        font-size: 80px;
+        margin: 1%;
+    }
+
+    .title h3 {
+        margin: 0;
+        padding-left: 350px;
+    }
 }
 
 nav ul li {
     display: inline-block;
     text-decoration: none;
-    padding: 0 4%;
 }
 
-.header {
-    text-align: center;
+.video_header {
+    margin: 5% 2.5% 5% 35%;
+    width: 850px;
+    background-color: pink;
 }
 
-.header img {
-    width: 95%;
-    text-align: center;
-    margin: auto;
+.video_header h1, h2 {
+    padding: 0; 
+    margin: 0;
+}
+
+.video_header h1 {
+    font-size: 150px;
+    font-family: 'Great Vibes', cursive;
+    background-color: blueviolet;
+    padding: 0;
+    margin: 0;
+}
+
+.video_header h3 {
+    padding: 0;
+    margin: 0 10%;
+    text-align: right;
+}
+
+.youtube_video iframe {
+    width: 750px;
+    height: 400px;
+    padding: 5%;
 }
