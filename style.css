@@ -86,7 +86,7 @@ nav {
     .header {
         text-align: center;
         margin: 100px 2.5% 200px 2.5%;
-        width: 95%;
+        max-width: 95%;
         background-image: url(images/headerphoto.jpg);
         background-size: cover;
         height: 700px;
@@ -104,7 +104,7 @@ nav {
     }
 
     .video_header h1 {
-        color: greenyellow;
+        color: gray;
         font-size: 170px;
         font-family: 'Meadowbrook';
         font-weight: lighter;
@@ -129,22 +129,24 @@ nav {
         text-align: right;
         font-size:  28px;
     }
-}
 
-nav ul li {
-    display: inline-block;
-    text-decoration: none;
-}
 
-.video_header {
-    margin: 5% 2.5% 5% 35%;
-    width: 700px;
-}
+    nav ul li {
+        display: inline-block;
+        text-decoration: none;
+    }
 
-.youtube_video iframe {
-    width: 700px;
-    height: 350px;
-    margin: 0 10%;
+    .video_header {
+        margin: 5% 2.5% 5% 35%;
+        width: 700px;
+    }
+
+    .youtube_video iframe {
+        width: 700px;
+        height: 350px;
+        margin: 0 10%;
+    }
+
 }
 
 
@@ -187,7 +189,7 @@ nav ul li {
     }
 
     .video_header h1 {
-        color: greenyellow;
+        color: goldenrod;
         font-size: 130px;
         font-family: 'Meadowbrook';
         font-weight: lighter;
