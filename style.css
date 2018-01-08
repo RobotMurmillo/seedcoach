@@ -54,14 +54,12 @@ nav {
         padding: 0;
         text-align: center;
         }
-    .header {
-        text-align: center;
+    #desktopimage {
+        display: none;
+    }
+    .header img {
         margin: 50px 5% 200px 5%;
         width: 90%;
-        background-image: url(images/headerphoto_mob.png);
-        background-position: center;
-        background-size: cover;
-        height: 550px;
         }
     nav {
         display: none;
@@ -87,9 +85,14 @@ nav {
         text-align: center;
         margin: 100px 2.5% 200px 2.5%;
         max-width: 95%;
-        background-image: url(images/headerphoto.jpg);
-        background-size: cover;
-        height: 700px;
+    }
+
+    #mobileimage {
+        display: none;
+    }
+
+    .header img {
+        width: 100%; 
     }
 
 
@@ -215,11 +218,11 @@ nav {
         text-align: center;
         margin: 100px 2.5%;
         width: 95%;
-        background-image: url(images/headerphoto_mob.png);
-        background-size: cover;
-        height: 700px;
     }
 
+    #mobileimage {
+        display: none;
+    }
 
 
     .youtube_video iframe {
