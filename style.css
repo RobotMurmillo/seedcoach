@@ -37,7 +37,7 @@ nav {
     
 }
 
-.video_header h1 {
+.video_header h1, .about_me h1, .about_you h1 {
     font-family: 'Meadowbrook';
     font-weight: lighter;
     margin: 0;
@@ -64,6 +64,15 @@ nav {
 .youtube_video {
     display: block;
 }
+
+.about_text{ 
+    font-family: 'Arial';
+    width:550px;
+    margin: 5%;
+    line-height: 1.6em;
+    font-size: 18px;
+}
+
 
 @media screen and (max-width:650px) {
     /* Mobile Version */
@@ -128,6 +137,23 @@ nav {
         height: 260px;
     }
 
+    .about_me h1 {
+        font-size: 90px;
+        text-align: center;
+    }
+
+    .about_you h1 {
+        font-size: 90px;
+        text-align: left;
+    }
+
+    .about_text { 
+        width: 90%;
+    }
+
+    p {
+        font-size: 14px;
+    }
 
 }
 
@@ -196,10 +222,25 @@ nav {
     }
 
     .youtube_video iframe {
-        width: 700px;
-        height: 390px;
-        margin: 0 15%;
+        width: 800px;
+        height: 440px;
+        margin: 0 15% 10% 15%;
     }
+
+    .about_me h1 {
+        font-size: 120px;
+        text-align: center;
+    }
+
+    .about_you h1 {
+        font-size: 120px;
+        text-align: left;
+    }
+
+    #about_you_text {
+        float: right;
+    }
+
 }
 
 @media screen and (max-width: 900px)  and (min-width:650px){
@@ -221,8 +262,7 @@ nav {
         font-size: 25px;
         margin: 0;
         padding: 0 0 0 240px;
-        text-align: center;
-        
+        text-align: center;  
     }
 
     .header {
@@ -266,6 +306,26 @@ nav {
     nav {
         display: none;
     }
+
+    .about_me h1 {
+        font-size: 100px;
+        text-align: center;
+    }
+
+    .about_you h1 {
+        font-size: 100px;
+        text-align: left;
+    }
+
+    .about_me, .about_text  {
+        margin: 0 auto;
+    }
+
+    #about_you_text {
+        float: none;
+    }
+
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -290,11 +350,22 @@ nav {
     }
 
     .youtube_video {
-        margin: 1%; 
+        width:100%;
+        margin: 0 auto; 
     }
     .youtube_video iframe {
-        width: 380px;
+        width: 375px;
         height: 215px;
+        margin: 0 auto; 
+    }
+
+    .about_me h1, .about_you h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 11px;
     }
 
 }
