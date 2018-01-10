@@ -12,6 +12,7 @@
 :root {
     margin: 0;
     padding: 0; 
+    background-color: #fefdfb;
 }
 
 .title h1 {
@@ -28,7 +29,8 @@
 
 nav {
     font-family: 'Amatic SC', cursive;
-    font-size: 25px;
+    font-weight: lighter;
+    font-size: 28px;
 }
 
 .video_header {
@@ -65,19 +67,67 @@ nav {
     display: block;
 }
 
-.about_text{ 
-    font-family: 'Arial';
-    width:550px;
-    margin: 5%;
-    line-height: 1.6em;
-    font-size: 18px;
+.about_me_image {
+    float: left;
+    width: 660px;
+    margin: 2% 0 0 5%;
+    padding: 0;
 }
+
+.about_me_image img {
+    width: 100%;
+}
+
+.about_me h1, .about_you h1 {
+    font-size: 125px;
+}
+
+.about_me { 
+    width: 480px;
+    float: right;
+    margin: 5% 10% 0 0;
+}
+
+.about_you {
+    width:480px;
+    float: left; 
+    margin: 10% 0 0 10%;
+}
+
+.about_me_text, .about_you_text {
+    width: 100%;
+}
+
+.about_me_container {
+    width: 100%;
+}
+
+.about_me p , .about_you p {
+    font-family: 'Georgia';
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.about_you_image {
+    float: right;
+    width: 660px;
+    margin: 30% 0 0 10%;
+    padding: 0;
+
+}
+
+.about_you_image img {
+    width: 100%;
+}
+
+
+
 
 
 @media screen and (max-width:650px) {
     /* Mobile Version */
     .title {
-        background-color: white;
+        background-color: #fefdfb;
         width: 100%;
         text-align: center;
     }
@@ -99,7 +149,7 @@ nav {
     }
 
     .header img {
-        margin: 50px 5% 150px 5%;
+        margin: 50px 5% 130px 5%;
         width: 90%;
         }
     
@@ -137,26 +187,11 @@ nav {
         height: 260px;
     }
 
-    .about_me h1 {
-        font-size: 90px;
-        text-align: center;
-    }
-
-    .about_you h1 {
-        font-size: 90px;
-        text-align: left;
-    }
-
-    .about_text { 
-        width: 90%;
-    }
-
     p {
         font-size: 14px;
     }
 
 }
-
 
 @media screen and (min-width:650px) {
     /* Desktop Version */
@@ -174,7 +209,7 @@ nav {
 
     .header {
         text-align: center;
-        margin: 100px 2.5% 200px 2.5%;
+        margin: 100px 2.5% 150px 2.5%;
         max-width: 95%;
     }
 
@@ -222,24 +257,17 @@ nav {
     }
 
     .youtube_video iframe {
-        width: 800px;
-        height: 440px;
+        width: 770px;
+        height: 430px;
         margin: 0 15% 10% 15%;
     }
 
-    .about_me h1 {
-        font-size: 120px;
-        text-align: center;
+    .about_me_line, .about_you_line {
+        background-color: black;
+        width: 50%;
+        height: 3px;
     }
 
-    .about_you h1 {
-        font-size: 120px;
-        text-align: left;
-    }
-
-    #about_you_text {
-        float: right;
-    }
 
 }
 
@@ -305,27 +333,7 @@ nav {
 
     nav {
         display: none;
-    }
-
-    .about_me h1 {
-        font-size: 100px;
-        text-align: center;
-    }
-
-    .about_you h1 {
-        font-size: 100px;
-        text-align: left;
-    }
-
-    .about_me, .about_text  {
-        margin: 0 auto;
-    }
-
-    #about_you_text {
-        float: none;
-    }
-
-    
+    }  
 }
 
 @media screen and (max-width: 480px) {
@@ -359,10 +367,6 @@ nav {
         margin: 0 auto; 
     }
 
-    .about_me h1, .about_you h1 {
-        font-size: 80px;
-        text-align: center;
-    }
     
     p {
         font-size: 11px;
