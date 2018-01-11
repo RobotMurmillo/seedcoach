@@ -91,35 +91,29 @@ nav {
 .about_you {
     width:480px;
     float: left; 
-    margin: 10% 0 0 10%;
+    margin: 12% 0 0 10%;
 }
 
 .about_me_text, .about_you_text {
     width: 100%;
 }
 
-.about_me_container {
-    width: 100%;
-}
-
 .about_me p , .about_you p {
     font-family: 'Georgia';
     font-size: 16px;
-    line-height: 30px;
+    line-height: 34px;
 }
 
 .about_you_image {
-    float: right;
+    float: left;
     width: 660px;
-    margin: 30% 0 0 10%;
+    margin: 10% 0 0 5%;
     padding: 0;
-
 }
 
 .about_you_image img {
     width: 100%;
 }
-
 
 
 
@@ -274,7 +268,6 @@ nav {
 @media screen and (max-width: 900px)  and (min-width:650px){
     /* IN BETWEEN STAGE/ TABLET */
     .title {
-        background-color: white;
         width: 100%;
         text-align: center;
     }
@@ -366,8 +359,7 @@ nav {
         height: 215px;
         margin: 0 auto; 
     }
-
-    
+        
     p {
         font-size: 11px;
     }
