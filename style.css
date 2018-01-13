@@ -125,7 +125,8 @@ nav {
 
 .testimonial_container {
     width: 700px;
-    margin: 30% auto;
+    margin: 25% auto;
+    font-family: 'Georgia';
 }
 
 
@@ -173,9 +174,10 @@ nav {
 
 .quote h3 {
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
     padding: 0;
     margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .left_quote, .right_quote {
@@ -191,7 +193,7 @@ nav {
 
 .right_quote {
     text-align: right;
-    margin-top: -50px;
+    margin-top: -30px;
     padding: 0;
 }
 
@@ -279,6 +281,18 @@ nav {
 
     .about_me p, .about_you p {
         font-size: 14px;
+    }
+
+    .testimonial_container {
+        width: 100%;
+    }
+
+    .testimonial_header h1 {
+        font-size: 100px;
+    }
+
+    .testimonial {
+        width: 90%;
     }
 
 }
@@ -419,6 +433,28 @@ nav {
     nav {
         display: none;
     }  
+
+    .about_me_container, .about_you_container {
+        width:100%;
+        height: auto;
+    }
+
+    .about_me_image, .about_me, .about_you_image, .about_you {
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .about_me_image, .about_you_image {
+        width: 90%;
+    }
+
+    .about_me, .about_you {
+        width: 90%;
+    }
+
+    .about_me p, .about_you p {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 480px) {
