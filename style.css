@@ -2,11 +2,12 @@
 
 @font-face {
     font-family: 'Meadowbrook';
-      src:  url('Meadowbrook.ttf.woff') format('woff'),
-      url('Meadowbrook.ttf.svg#Meadowbrook') format('svg'),
-      url('Meadowbrook.ttf.eot'),
-      url('Meadowbrook.eot?#iefix') format('embedded-opentype');
-    font-size: 100px; 
+    src:url('Meadowbrook.ttf.woff') format('woff'),
+        url('Meadowbrook.ttf.svg#Meadowbrook') format('svg'),
+        url('Meadowbrook.ttf.eot'),
+        url('Meadowbrook.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root {
@@ -67,52 +68,59 @@ nav {
     display: block;
 }
 
+.about_me_container, .about_you_container {
+    width: 1200px;
+    height: 500px;
+    margin: 10% auto;
+    }
+
 .about_me_image {
-    float: left;
     width: 660px;
-    margin: 2% 0 0 5%;
-    padding: 0;
+    margin: -2% 0 0 -2%;
+}
+
+.about_you_image {
+    width: 660px;
+    margin: -35% 0 0 48%;
 }
 
 .about_me_image img {
     width: 100%;
 }
 
-.about_me h1, .about_you h1 {
-    font-size: 125px;
+.about_you_image img {
+    width: 100%; 
 }
 
-.about_me { 
+.about_me {
     width: 480px;
-    float: right;
-    margin: 5% 10% 0 0;
+    margin: -35% 0 0 56%;
 }
 
 .about_you {
-    width:480px;
-    float: left; 
-    margin: 12% 0 0 10%;
+    width: 480px;
+    margin: 8%;
 }
 
-.about_me_text, .about_you_text {
+.about_me_text {
     width: 100%;
 }
 
-.about_me p , .about_you p {
+.about_me p, .about_you p {
     font-family: 'Georgia';
     font-size: 16px;
     line-height: 34px;
 }
 
-.about_you_image {
-    float: left;
-    width: 660px;
-    margin: 10% 0 0 5%;
+.about_me h1, .about_you h1{
+    font-family: 'Meadowbrook';
+    font-weight: lighter;
+    margin: 0;
     padding: 0;
 }
 
-.about_you_image img {
-    width: 100%;
+.about_me h1, .about_you h1 {
+    font-size: 125px;
 }
 
 
