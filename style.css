@@ -99,7 +99,7 @@ nav {
 
 .about_you {
     width: 480px;
-    margin: 8%;
+    margin: 4%;
 }
 
 .about_me_text {
@@ -112,16 +112,17 @@ nav {
     line-height: 34px;
 }
 
-.about_me h1, .about_you h1{
-    font-family: 'Meadowbrook';
-    font-weight: lighter;
-    margin: 0;
-    padding: 0;
-}
 
 .about_me h1, .about_you h1 {
     font-size: 125px;
 }
+
+.about_me_line, .about_you_line {
+    background-color: black;
+    width: 50%;
+    height: 3px;
+}
+
 
 
 
@@ -264,11 +265,7 @@ nav {
         margin: 0 15% 10% 15%;
     }
 
-    .about_me_line, .about_you_line {
-        background-color: black;
-        width: 50%;
-        height: 3px;
-    }
+
 
 
 }
