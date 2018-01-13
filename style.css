@@ -190,7 +190,25 @@ nav {
         height: 260px;
     }
 
-    p {
+    .about_me_container, .about_you_container {
+        width:100%;
+        height: auto;
+    }
+
+    .about_me_image, .about_me, .about_you_image, .about_you {
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .about_me_image, .about_you_image {
+        width: 90%;
+    }
+
+    .about_me, .about_you {
+        width: 90%;
+    }
+
+    .about_me p, .about_you p {
         font-size: 14px;
     }
 
@@ -364,9 +382,13 @@ nav {
         height: 215px;
         margin: 0 auto; 
     }
+
+    .about_me h1, .about_you h1 {
+        font-size: 80px;
+    }
         
-    p {
-        font-size: 11px;
+    .about_me p, .about_you p {
+        font-size: 12px;
     }
 
 }
