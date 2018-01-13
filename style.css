@@ -81,7 +81,7 @@ nav {
 
 .about_you_image {
     width: 660px;
-    margin: -35% 0 0 48%;
+    margin: -45% 0 0 48%;
 }
 
 .about_me_image img {
@@ -123,8 +123,77 @@ nav {
     height: 3px;
 }
 
+.testimonial_container {
+    width: 700px;
+    margin: 30% auto;
+}
 
 
+.testimonial_header h1{
+    font-size: 125px;
+    font-family: 'Meadowbrook';
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.testimonial_line {
+    background-color: black;
+    width: 50%;
+    height: 3px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    width: 500px;
+    margin: 0 auto; 
+    padding: 0;
+    font-style: italic;
+    text-align: right;
+}
+
+.testimonies {
+    width: 90%; 
+    height: 80px;
+    margin: 0 auto; 
+    padding: 0;
+    color: gray;
+}
+
+.testimonies * {
+    display:inline-block;
+    vertical-align: middle;  
+}
+
+.quote p {
+    text-align: center;
+    font-size:18px;
+}
+
+.quote h3 {
+    text-align: center;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.left_quote, .right_quote {
+    font-size: 30px;
+    font-family: 'Meadowbrook';
+}
+
+.left_quote {
+    margin-bottom: -50px;
+    padding: 0;
+    text-align: left;
+}
+
+.right_quote {
+    text-align: right;
+    margin-top: -50px;
+    padding: 0;
+}
 
 
 @media screen and (max-width:650px) {

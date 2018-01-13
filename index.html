@@ -2,10 +2,21 @@
 <html>
     <head>
         <title>Katheryn Hope</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css"> 
         <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">   
     </head>
     <body>
+        <script>
+            $(document).ready(function() {
+                var testimony = $('div[id^="testimonial-"]').hide(),
+                i = 0;
+                (function carousel() { 
+                    testimony.eq(i).fadeIn(400).delay(8500).fadeOut(400, carousel);
+                    i = ++i % testimony.length;
+                })();
+            });           
+        </script>
         <div class='title'>
             <h1>Katheryn Hope</h1>
             <h3>extraordinary coaching</h3>
@@ -58,5 +69,45 @@
                     <img src='images/about_you.jpg' alt="about Katheryn">
                 </div> 
             </div>  
+                <div class='testimonial_container'>
+                    <div class= 'testimonial_header'>
+                        <h1>testimonials</h1>
+                        <div class='testimonial_line'></div>
+                    </div>
+                    <div class = 'testimonial'>
+                        <div class='left_quote'><h1>"</h1></div>
+                        <div class= 'testimonies'>
+                                <div id="testimonial-1" class='quote'>
+                                    <p>Katheryn is a very gifted and intuitive therapist and I highly recommend her sessions.</p>
+                                    <h3> - Astrologer and writer, Dorset</h3>
+                                </div>
+                                <div id="testimonial-2" class='quote'>
+                                    <p>Everybody always comes out of a session saying "Wow that was amazing!"</p>
+                                    <h3>- Holly Mullin, Detox Retreat Director</h3>
+                                </div>
+                                <div id="testimonial-3" class='quote'>
+                                    <p>We can now lean into the wind and know we cannot fall. I feel…Delight! Whole again. We know it is safe to explore and have adventures, and come home for bonding, love and trust. Thank you.</p>
+                                    <h3>- Therapist, Lincoln</h3>
+                                </div>
+                                <div id="testimonial-4" class='quote'>
+                                    <p>Katheryn has given me the gift of believing that I can achieve anything in my life.</p>
+                                    <h3>- Teacher, Devon</h3>
+                                </div>
+                                <div id="testimonial-5" class='quote'>
+                                    <p>Katheryn can lead you to a more inspired outlook on life joyfully and gratefully.</p>
+                                    <h3>- Julia Brightwell, Biodanza Practice</h3>
+                                </div>
+                                <div id="testimonial-6" class='quote'>
+                                    <p>Katheryn has the ability to put people at ease. Clients feel comfortable; she can put herself in their shoes. She has good empathy skills and a unique ability to receive intuitive guidance. She has good insight and clarity and helps them get to the bottom of an issue.</p>
+                                    <h3>- Self-employed, Devon</h3>
+                                </div>
+                                <div id="testimonial-7" class='quote'>
+                                    <p>I felt drawn to Katheryn the moment I met her, not just as a coach but also as a person</p>
+                                    <h3>- Ann Skinner, "Coach to Contribute"</h3>
+                                </div>
+                        </div>
+                        <div class='right_quote'><h1>"</h1></div>
+                    </div>
+                </div>    
     </body>
 </html>
